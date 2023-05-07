@@ -20,3 +20,4 @@ Tesztelésre a következő felhasználók lettek létrehozva az adatbázisban. B
   - összes tárgy listájának megtekintése
   - tárgyak módosítása/törlése (a tárgyak listájában érhető el)
   - tárgyak létrehozása (az adminisztráció fül alatt érhető el)
+  - tanulók regisztrálása (az adminisztráció fül alatt érhető el)
