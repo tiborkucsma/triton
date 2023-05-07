@@ -1,5 +1,5 @@
 # Triton
-Egy "fake-neptun" rendszer.
+Egy "fake-neptun" rendszer. Kitelepítve elérhető [itt](https://etriton.web.app).
 
 ## Teszt felhasználók
 Tesztelésre a következő felhasználók lettek létrehozva az adatbázisban. Belépni egy email és jelszó párral lehet.
