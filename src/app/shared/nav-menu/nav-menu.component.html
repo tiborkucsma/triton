@@ -1,0 +1,9 @@
+<a mat-button *ngIf="!isUserLoggedIn()" routerLink="/login">Bejelentkezés</a>
+<ng-template [ngIf]="isUserLoggedIn()">
+  <a mat-button routerLink="/user-info">Adataim</a>
+  <a mat-button routerLink="/messages">Üzenetek</a>
+  <a *ngIf="userHasRole(userRole.Student)" mat-button routerLink="/studies">Tanulmányi adatok</a>
+  <a mat-button routerLink="/subjects">Tárgyak</a>
+  <a *ngIf="userHasRole(userRole.Administrator)" mat-button routerLink="/admin">Adminisztráció</a>
+  <a mat-button (click)="logout()">Kijelentkezés</a>
+</ng-template>

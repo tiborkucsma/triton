@@ -1,0 +1,34 @@
+<mat-card>
+  <mat-card-content>
+    <table fxFlexFill *ngIf="user">
+      <tr>
+        <td>Email</td>
+        <td>{{user.email}}</td>
+      </tr>
+      <tr>
+        <td>Vezetéknév</td>
+        <td>{{user.name.lastname}}</td>
+      </tr>
+      <tr>
+        <td>Keresztnév</td>
+        <td>{{user.name.firstname}}</td>
+      </tr>
+      <tr>
+        <td>Születési dátum</td>
+        <td>{{user.dateOfBirth.toDate().toLocaleDateString()}}</td>
+      </tr>
+      <tr>
+        <td>Diákigazolvány szám</td>
+        <td>{{user.studentCardNumber}}</td>
+      </tr>
+      <tr>
+        <td>Lakcím</td>
+        <td>{{user.address}}</td>
+      </tr>
+      <tr>
+        <td>Fióktípus</td>
+        <td>{{userRoleToString(user.role)}}</td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>

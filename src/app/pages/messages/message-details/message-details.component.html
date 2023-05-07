@@ -1,0 +1,5 @@
+<h2>Üzenet</h2>
+<h4><b>Küldő:</b> {{message?.from?.name?.lastname}} {{message?.from?.name?.firstname}}</h4>
+<h4><b>Tárgy:</b> {{message?.title}}</h4>
+<p>{{message?.body}}</p>
+<p><i>{{message?.timestamp?.toDate()?.toLocaleString()}}</i></p>

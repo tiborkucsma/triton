@@ -1,0 +1,19 @@
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav>
+    <app-nav-menu fxLayout="column" (click)="sidenav.close()"></app-nav-menu>
+  </mat-sidenav>
+  <mat-sidenav-content fxFlexFill>
+    <mat-toolbar color="primary">
+      <div fxHide.gt-xs>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <span>eTriton</span>
+      <app-nav-menu fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs></app-nav-menu>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

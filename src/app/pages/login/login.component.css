@@ -1,0 +1,14 @@
+.loading-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.loading-indicator mat-spinner {
+    margin: 40vh auto;
+}

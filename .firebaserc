@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "triton-1cf6d": {
+      "hosting": {
+        "triton": [
+          "etriton"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "triton-1cf6d"
+  }
+}
